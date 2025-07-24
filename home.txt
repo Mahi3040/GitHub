@@ -1,2 +1,6 @@
 
+<<<<<<< Updated upstream
 this home page & back ff
+=======
+this home page & back jii
+>>>>>>> Stashed changes
