@@ -1,0 +1,22 @@
+🔧 All Useful Git Stash Commands
+Command	What it does
+git stash	                 Stashes only tracked changes
+git stash -u	             Stashes tracked + untracked changes
+git stash -a	             Stashes everything (even ignored files)
+git stash list	             Shows all stashed items (like a history)
+git stash show -p stash@{0}	 Shows what’s inside a stash (with diff)
+git stash apply	             Re-applies the latest stash (does not delete it)
+git stash pop	             Applies the latest stash and deletes it from stash list
+git stash apply stash@{1}	 Applies a specific stash by index
+git stash drop stash@{0}	 Deletes a specific stash
+git stash clear	             Deletes all stashes
+
+
+When to Use Stashing in Real Work
+=================================
+Scenario	                                  Why Stash Helps
+Need to switch branches temporarily	        To not lose in-progress work
+Work is not ready to commit	                Don't want dirty code in history
+Fix a production issue urgently	            Helps context switching
+Testing changes across branches         	Safe way to pause a feature
+Need clean working directory to pull/merge	Prevents merge/stage conflicts
